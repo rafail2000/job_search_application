@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Аналитик данных / Data Analyst",
+        "url": "https://api.hh.ru/vacancies/125531958?host=hh.ru",
+        "description": "Высшее образование в области аналитики, математики, экономики или IT. Уверенные навыки SQL, опыт визуализации данных и построения прогнозных моделей. ",
+        "salary": 1000000
+    },
+    {
+        "name": "Фулл-стек разработчик",
+        "url": "https://api.hh.ru/vacancies/125504159?host=hh.ru",
+        "description": "Опыт коммерческой разработки от 3 лет. Глубокое знание JavaScript/TypeScript. Опыт работы с Node.js и React на production-проектах. ",
+        "salary": 1000000
+    },
+    {
+        "name": "Аналитик данных",
+        "url": "https://api.hh.ru/vacancies/123876747?host=hh.ru",
+        "description": "высшее образование (прикладная/теоретическая математика/наука о данных/IT). - знание <highlighttext>Python</highlighttext>, Power BI, Excel/Google Sheets, DAX (Power BI), SQL. ",
+        "salary": 600000
+    },
+    {
+        "name": "Технический директор (CTO)",
+        "url": "https://api.hh.ru/vacancies/125002805?host=hh.ru",
+        "description": "Глубокие знания высоконагруженных систем, микросервисов и стека (<highlighttext>Python</highlighttext>, Node.js, PostgreSQL, Kubernetes). Опыт миграции с монолита, настройки DevOps-процессов и работы...",
+        "salary": 600000
+    },
+    {
+        "name": "Тимлид проекта",
+        "url": "https://api.hh.ru/vacancies/125564204?host=hh.ru",
+        "description": "Техника: NodeJS/<highlighttext>Python</highlighttext>/Go, React, AI/blockchain, SQL. Менеджмент: KPI, бюджеты, менторство. Soft: Английский B2+, коммуникация. ",
+        "salary": 600000
+    }
+]
