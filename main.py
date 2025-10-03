@@ -24,14 +24,16 @@ def user_interaction():
     for i in top_vacancies:
         print(f"{i.name}\n{i.url}\n{i.description}\n{i.salary}\n")
 
-    del_command = input("наберите команду 'del' если хотите удалить предыдущие результаты поиска: ")
+    del_command = input("Наберите команду 'del' если хотите удалить предыдущие результаты поиска: ")
+    save_or_add = input("Наберите команду 'add' если вы хотите добавить результат к первичным данным, ничего если сохранить только эти данные: ")
 
-    if del_command.lower == "del":
+    if del_command.lower() == "del":
         js.del_to_json(PATH_TO_JSON)
 
-    js.save_to_json(top_vacancies, PATH_TO_JSON)
-
-
+    if save_or_add.lower() == "add":
+        js.add_to_json(top_vacancies, PATH_TO_JSON)
+    else:
+        js.save_to_json(top_vacancies, PATH_TO_JSON)
 
 
 if __name__ == "__main__":

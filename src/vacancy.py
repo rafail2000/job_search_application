@@ -4,15 +4,10 @@ from abc import ABC, abstractmethod
 class AbstractVacancy(ABC):
     """ Абстрактный класс вакансий """
 
+    @staticmethod
     @abstractmethod
-    def __le__(self, other):
-        """ Определяет поведение оператора меньше или равно, <= """
-
-        pass
-
-    @abstractmethod
-    def __ge__(self, other):
-        """ Определяет поведение оператора меньше или равно, <= """
+    def get_salary(salary):
+        """ Абстрактный метод получение зарплаты из вакансии """
 
         pass
 
@@ -25,8 +20,14 @@ class Vacancy(AbstractVacancy):
     def __init__(self, name, url, salary, description):
         self.name = name
         self.url = url
-        self.salary = 0 if not salary else salary.get('from') if salary.get('from', False) else 0
+        self.salary = self.get_salary(salary)
         self.description = description
+
+    @staticmethod
+    def get_salary(salary):
+        """ Получение зарплаты из вакансии """
+
+        return 0 if not salary else salary.get('from') if salary.get('from', False) else 0
 
     def __le__(self, other):
         """ Определяет поведение оператора меньше или равно, <= """

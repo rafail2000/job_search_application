@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 import requests
 
 
-class AbstractParser(ABC):
-    """ Абстрактный класс AbstractParser """
+class AbstractHeadHunterAPI(ABC):
+    """ Абстрактный класс AbstractHeadHunterAPI """
 
     @abstractmethod
     def load_vacancies(self, keyword: str) -> None:
@@ -13,30 +13,17 @@ class AbstractParser(ABC):
         pass
 
 
-class Parser(AbstractParser):
-    """ Родительский класс Parser """
-
-    def __init__(self, file_worker: str=None) -> None:
-        self.file_worker = file_worker
-
-    def load_vacancies(self, keyword: str) -> None:
-        """ Метод загрузки вакансий класса Parser """
-
-        pass
-
-
-class HeadHunterAPI(Parser):
+class HeadHunterAPI(AbstractHeadHunterAPI):
     """ Класс для работы с API HeadHunter """
 
-    def __init__(self, file_worker: str=None) -> None:
+    def __init__(self) -> None:
         self.url = 'https://api.hh.ru/vacancies'
         self.headers = {'User-Agent': 'HH-User-Agent'}
         self.params = {'text': '', 'page': 0, 'per_page': 100}
         self.vacancies = []
-        super().__init__(file_worker)
 
     def load_vacancies(self, keyword: str) -> None:
-        """ Метод загрузки вакансий класса Parser """
+        """ Метод загрузки вакансий """
 
         self.params['text'] = keyword
         while self.params.get('page') != 20:
