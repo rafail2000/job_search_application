@@ -1,9 +1,6 @@
 import json
 from abc import ABC, abstractmethod
 
-from config import PATH_TO_JSON
-from src.vacancy import Vacancy
-
 
 class AbstractJSONSaver(ABC):
     """ Абстрактный класс AbstractJSONSaver """
@@ -26,6 +23,13 @@ class AbstractJSONSaver(ABC):
     @abstractmethod
     def del_to_json(path: str) -> None:
         """ Абстрактный метод Удаление данных из файла vacancy.json """
+
+        pass
+
+    @staticmethod
+    @abstractmethod
+    def receiving_data(path: str) -> None:
+        """ Абстрактный метод получение данных из файла """
 
         pass
 
@@ -74,3 +78,14 @@ class JSONSaver(AbstractJSONSaver):
             # noinspection PyTypeChecker
             json.dump([], file, ensure_ascii=False, indent=4)
 
+    @staticmethod
+    def receiving_data(path: str) -> None:
+        """ Получение данных из файла """
+
+        with open(path, 'r', encoding='utf-8') as file:
+            load_file = json.load(file)
+            if len(load_file) < 1:
+                print("Нет данных для вывода")
+            else:
+                for i in load_file:
+                    print(f"{i["name"]}\n{i["url"]}\n{i["description"]}\n{i["salary"]}\n")

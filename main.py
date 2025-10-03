@@ -24,6 +24,10 @@ def user_interaction():
     for i in top_vacancies:
         print(f"{i.name}\n{i.url}\n{i.description}\n{i.salary}\n")
 
+    print_data = input("Вывести сохранённые вакансии, Y/N? ")
+    if print_data.lower() == "y":
+        js.receiving_data(PATH_TO_JSON)
+
     del_command = input("Наберите команду 'del' если хотите удалить предыдущие результаты поиска: ")
     save_or_add = input("Наберите команду 'add' если вы хотите добавить результат к первичным данным, ничего если сохранить только эти данные: ")
 

@@ -16,5 +16,17 @@
         "url": "https://api.hh.ru/vacancies/125020297?host=hh.ru",
         "description": "Высшее образование (желательно техническое или математическое). Плюсом будет знание языков программирования (например, SQL, <highlighttext>Python</highlighttext>). Понимание принципов работы реляционных баз данных. ",
         "salary": 100000
+    },
+    {
+        "name": "Backend (Go/Python) Developer",
+        "url": "https://api.hh.ru/vacancies/125868593?host=hh.ru",
+        "description": "Нужно: 1–3+ лет коммерческой разработки на <highlighttext>Python</highlighttext> или Go (желательно оба). Уверенный SQL, PostgreSQL (индексы, планы, транзакции). ",
+        "salary": 100000
+    },
+    {
+        "name": "Backend (Go/Python) Developer",
+        "url": "https://api.hh.ru/vacancies/125868593?host=hh.ru",
+        "description": "Нужно: 1–3+ лет коммерческой разработки на <highlighttext>Python</highlighttext> или Go (желательно оба). Уверенный SQL, PostgreSQL (индексы, планы, транзакции). ",
+        "salary": 100000
     }
 ]

@@ -27,7 +27,10 @@ class Vacancy(AbstractVacancy):
     def get_salary(salary):
         """ Получение зарплаты из вакансии """
 
-        return 0 if not salary else salary.get('from') if salary.get('from', False) else 0
+        return 0 if not salary\
+            else salary.get('from')\
+            if salary.get('from', False)\
+            else 0
 
     def __le__(self, other):
         """ Определяет поведение оператора меньше или равно, <= """
