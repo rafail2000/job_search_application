@@ -17,5 +17,3 @@ def test_ge_dunder_method(vacancy_class, vacancy_class_low_salary):
     """ Тесты магического метода __ge__ """
 
     assert vacancy_class >= vacancy_class_low_salary
-
-
