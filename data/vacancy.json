@@ -1,14 +1,14 @@
 [
     {
-        "name": "Backend-разработчик",
-        "url": "https://api.hh.ru/vacancies/125277304?host=hh.ru",
-        "description": "Уверенное пользование <highlighttext>Python</highlighttext>, веб-фреймворками (FastAPI/Django), PostgreSQL, Redis. Иметь понимание о REST API, базах данных, Docker, CI/CD, написании...",
+        "name": "Аналитик данных (WB)",
+        "url": "https://api.hh.ru/vacancies/126101754?host=hh.ru",
+        "description": "Опыт работы с АРІ. Базовые знания SQL (SELECT, JOIN, агрегации). DataLens. <highlighttext>Python</highlighttext> (pandas, requests, gspread). Понимание принципов ETL. Аналитическое мышление. ",
         "salary": 100000
     },
     {
-        "name": "Python разработчик",
-        "url": "https://api.hh.ru/vacancies/125879653?host=hh.ru",
-        "description": "Опыт коммерческой разработки от 1 года. Уверенное программирование на <highlighttext>Python</highlighttext>. Навык и опыт написания чистых SQL-запросов (без использования ORM). ",
+        "name": "Backend-разработчик (Python FastAPI)",
+        "url": "https://api.hh.ru/vacancies/125460804?host=hh.ru",
+        "description": "Опыт работы в разработке от 1 года. Уверенное знание <highlighttext>Python</highlighttext>, FastAPI, gRPC, SQLAlchemy, PostgreSQL. Хорошее понимание и практический опыт работы...",
         "salary": 100000
     },
     {
@@ -18,15 +18,15 @@
         "salary": 100000
     },
     {
-        "name": "Backend (Go/Python) Developer",
-        "url": "https://api.hh.ru/vacancies/125868593?host=hh.ru",
-        "description": "Нужно: 1–3+ лет коммерческой разработки на <highlighttext>Python</highlighttext> или Go (желательно оба). Уверенный SQL, PostgreSQL (индексы, планы, транзакции). ",
+        "name": "Backend-разработчик",
+        "url": "https://api.hh.ru/vacancies/125277304?host=hh.ru",
+        "description": "Уверенное пользование <highlighttext>Python</highlighttext>, веб-фреймворками (FastAPI/Django), PostgreSQL, Redis. Иметь понимание о REST API, базах данных, Docker, CI/CD, написании...",
         "salary": 100000
     },
     {
-        "name": "Backend (Go/Python) Developer",
-        "url": "https://api.hh.ru/vacancies/125868593?host=hh.ru",
-        "description": "Нужно: 1–3+ лет коммерческой разработки на <highlighttext>Python</highlighttext> или Go (желательно оба). Уверенный SQL, PostgreSQL (индексы, планы, транзакции). ",
+        "name": "Backend/Python Developer (Middle)",
+        "url": "https://api.hh.ru/vacancies/125528284?host=hh.ru",
+        "description": "<highlighttext>Python</highlighttext>. SQL. Mongodb. MYSql. Clickhouse. SQLite. Понимание подхода ООП, понимание концепции REST API. <highlighttext>Python</highlighttext> Packages. Pandas. Numpy. Flask. Tensorflow. Sklearn. ",
         "salary": 100000
     }
 ]
