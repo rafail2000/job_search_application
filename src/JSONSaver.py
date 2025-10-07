@@ -1,34 +1,32 @@
 import json
 from abc import ABC, abstractmethod
 
+from config import PATH_TO_JSON
+
 
 class AbstractJSONSaver(ABC):
     """ Абстрактный класс AbstractJSONSaver """
 
-    @staticmethod
     @abstractmethod
-    def save_to_json(data: list, path: str) -> None:
+    def save_to_json(self, data: list) -> None:
         """ Абстрактный метод для сохранения вакансий в файле """
 
         pass
 
-    @staticmethod
     @abstractmethod
-    def add_to_json(data: list, path: str) -> None:
+    def add_to_json(self, data: list) -> None:
         """ Абстрактный метод для добавления вакансий в файл """
 
         pass
 
-    @staticmethod
     @abstractmethod
-    def del_to_json(path: str) -> None:
+    def del_to_json(self) -> None:
         """ Абстрактный метод Удаление данных из файла vacancy.json """
 
         pass
 
-    @staticmethod
     @abstractmethod
-    def receiving_data(path: str) -> None:
+    def receiving_data(self) -> None:
         """ Абстрактный метод получение данных из файла """
 
         pass
@@ -37,11 +35,13 @@ class AbstractJSONSaver(ABC):
 class JSONSaver(AbstractJSONSaver):
     """ Класс для сохранения вакансий"""
 
-    @staticmethod
-    def save_to_json(data: list, path: str) -> None:
+    def __init__(self, path: str = PATH_TO_JSON):
+        self.path = path
+
+    def save_to_json(self, data: list) -> None:
         """ Метод сохранения вакансий в файле """
 
-        with open(path, 'w', encoding='utf-8') as file:
+        with open(self.path, 'w', encoding='utf-8') as file:
             res = []
             for i in data:
                 res.append({"name": i.name,
@@ -52,14 +52,13 @@ class JSONSaver(AbstractJSONSaver):
             #noinspection PyTypeChecker
             json.dump(res, file, ensure_ascii=False, indent=4)
 
-    @staticmethod
-    def add_to_json(data: list=None, path: str=None) -> None:
+    def add_to_json(self, data: list=None) -> None:
         """ Метод для добавления вакансий в файл """
 
-        with open(path, 'r', encoding='utf-8') as file:
+        with open(self.path, 'r', encoding='utf-8') as file:
             load_file = json.load(file)
 
-        with open(path, 'w', encoding='utf-8') as file:
+        with open(self.path, 'w', encoding='utf-8') as file:
             for i in data:
                 load_file.append({"name": i.name,
                                   "url": i.url,
@@ -69,20 +68,17 @@ class JSONSaver(AbstractJSONSaver):
             # noinspection PyTypeChecker
             json.dump(load_file, file, ensure_ascii=False, indent=4)
 
-
-    @staticmethod
-    def del_to_json(path: str) -> None:
+    def del_to_json(self) -> None:
         """ Удаление данных из файла vacancy.json """
 
-        with open(path, "w") as file:
+        with open(self.path, "w") as file:
             # noinspection PyTypeChecker
             json.dump([], file, ensure_ascii=False, indent=4)
 
-    @staticmethod
-    def receiving_data(path: str) -> None:
+    def receiving_data(self) -> None:
         """ Получение данных из файла """
 
-        with open(path, 'r', encoding='utf-8') as file:
+        with open(self.path, 'r', encoding='utf-8') as file:
             load_file = json.load(file)
             if len(load_file) < 1:
                 print("Нет данных для вывода")

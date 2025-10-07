@@ -13,7 +13,7 @@ def user_interaction():
     filter_words = input("Введите ключевые слова для фильтрации вакансий через пробел: ").split()
     salary_range = input("Введите диапазон зарплат через пробел: ").split()
 
-    hh.load_vacancies(search_query)
+    hh.__load_vacancies(search_query)
     vacancies_list = add_vacancy_in_lst(hh.vacancies)
     filtered_vacancies = filter_vacancies(vacancies_list, filter_words)
     ranged_vacancies = get_vacancies_by_salary(filtered_vacancies, salary_range)
@@ -26,18 +26,18 @@ def user_interaction():
 
     print_data = input("Вывести сохранённые вакансии, Y/N? ")
     if print_data.lower() == "y":
-        js.receiving_data(PATH_TO_JSON)
+        js.receiving_data()
 
     del_command = input("Наберите команду 'del' если хотите удалить предыдущие результаты поиска: ")
     save_or_add = input("Наберите команду 'add' если вы хотите добавить результат к первичным данным, ничего если сохранить только эти данные: ")
 
     if del_command.lower() == "del":
-        js.del_to_json(PATH_TO_JSON)
+        js.del_to_json()
 
     if save_or_add.lower() == "add":
-        js.add_to_json(top_vacancies, PATH_TO_JSON)
+        js.add_to_json(top_vacancies)
     else:
-        js.save_to_json(top_vacancies, PATH_TO_JSON)
+        js.save_to_json(top_vacancies)
 
 
 if __name__ == "__main__":
