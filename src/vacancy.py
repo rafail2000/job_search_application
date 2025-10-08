@@ -6,28 +6,28 @@ class AbstractVacancy(ABC):
 
     @staticmethod
     @abstractmethod
-    def __validate_name(name: str) -> str:
+    def _validate_name(name: str) -> str:
         """ Абстрактный метод проверка имени """
 
         pass
 
     @staticmethod
     @abstractmethod
-    def __validate_url(url: str) -> str:
+    def _validate_url(url: str) -> str:
         """ Абстрактный метод проверка url """
 
         pass
 
     @staticmethod
     @abstractmethod
-    def __validate_salary(salary: dict) -> float:
+    def _validate_salary(salary: dict) -> float:
         """ Абстрактный метод проверки зарплаты """
 
         pass
 
     @staticmethod
     @abstractmethod
-    def __validate_description(description: str) -> str:
+    def _validate_description(description: str) -> str:
         """ Абстрактный метод проверки описания """
 
         pass
@@ -41,11 +41,11 @@ class Vacancy(AbstractVacancy):
     def __init__(self, name, url, salary, description):
         self.name = name
         self.url = url
-        self.salary = self.__validate_salary(salary)
+        self.salary = self._validate_salary(salary)
         self.description = description
 
     @staticmethod
-    def __validate_name(name: str) -> str:
+    def _validate_name(name: str) -> str:
         """ Метод проверка имени """
 
         if name:
@@ -53,7 +53,7 @@ class Vacancy(AbstractVacancy):
         return "None"
 
     @staticmethod
-    def __validate_url(url: str) -> str:
+    def _validate_url(url: str) -> str:
         """ Метод проверка url """
 
         if url:
@@ -61,7 +61,7 @@ class Vacancy(AbstractVacancy):
         return "None"
 
     @staticmethod
-    def __validate_salary(salary: dict) -> float:
+    def _validate_salary(salary: dict) -> float:
         """ Получение зарплаты из вакансии """
 
         return 0 if not salary\
@@ -70,7 +70,7 @@ class Vacancy(AbstractVacancy):
             else 0
 
     @staticmethod
-    def __validate_description(description: str) -> str:
+    def _validate_description(description: str) -> str:
         """ Метод проверки описания """
 
         if description:

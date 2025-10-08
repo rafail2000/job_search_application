@@ -1,32 +1,32 @@
 [
     {
-        "name": "Аналитик данных (WB)",
-        "url": "https://api.hh.ru/vacancies/126101754?host=hh.ru",
-        "description": "Опыт работы с АРІ. Базовые знания SQL (SELECT, JOIN, агрегации). DataLens. <highlighttext>Python</highlighttext> (pandas, requests, gspread). Понимание принципов ETL. Аналитическое мышление. ",
-        "salary": 100000
+        "name": "Junior PHP (Laravel) разработчик",
+        "url": "https://api.hh.ru/vacancies/126120273?host=hh.ru",
+        "description": "Технологии: PHP 8.x, Laravel, MySQL, Git. SQL на уровне SELECT/INSERT/UPDATE/DELETE и простых JOIN. Внимательность к деталям...",
+        "salary": 300000
     },
     {
-        "name": "Backend-разработчик (Python FastAPI)",
-        "url": "https://api.hh.ru/vacancies/125460804?host=hh.ru",
-        "description": "Опыт работы в разработке от 1 года. Уверенное знание <highlighttext>Python</highlighttext>, FastAPI, gRPC, SQLAlchemy, PostgreSQL. Хорошее понимание и практический опыт работы...",
-        "salary": 100000
+        "name": "Системный аналитик (миграция Big Data)",
+        "url": "https://api.hh.ru/vacancies/126226421?host=hh.ru",
+        "description": "Хорошее владение SQL (сложные запросы, pivot-анализ). Практический опыт работы с <highlighttext>Python</highlighttext>. Умение работать с командной строкой Linux. ",
+        "salary": 300000
     },
     {
-        "name": "Бизнес-аналитик",
-        "url": "https://api.hh.ru/vacancies/125020297?host=hh.ru",
-        "description": "Высшее образование (желательно техническое или математическое). Плюсом будет знание языков программирования (например, SQL, <highlighttext>Python</highlighttext>). Понимание принципов работы реляционных баз данных. ",
-        "salary": 100000
+        "name": "Программист",
+        "url": "https://api.hh.ru/vacancies/125520432?host=hh.ru",
+        "description": "Программирование и IT: Базовые знания <highlighttext>Python</highlighttext> (для написания скриптов автоматизации, работы с данными). Знание SQL (для работы с базами данных...",
+        "salary": 300000
     },
     {
-        "name": "Backend-разработчик",
-        "url": "https://api.hh.ru/vacancies/125277304?host=hh.ru",
-        "description": "Уверенное пользование <highlighttext>Python</highlighttext>, веб-фреймворками (FastAPI/Django), PostgreSQL, Redis. Иметь понимание о REST API, базах данных, Docker, CI/CD, написании...",
-        "salary": 100000
+        "name": "DevOps (Senior) инженер",
+        "url": "https://api.hh.ru/vacancies/126094230?host=hh.ru",
+        "description": "Ansible. Yandex Cloud. Google cloud. Опыт с PHP, Golang, <highlighttext>Python</highlighttext>. Опыт работы с Jira, Confluence. Опыт поддержки баз данных (PostgreSQL).",
+        "salary": 260000
     },
     {
-        "name": "Backend/Python Developer (Middle)",
-        "url": "https://api.hh.ru/vacancies/125528284?host=hh.ru",
-        "description": "<highlighttext>Python</highlighttext>. SQL. Mongodb. MYSql. Clickhouse. SQLite. Понимание подхода ООП, понимание концепции REST API. <highlighttext>Python</highlighttext> Packages. Pandas. Numpy. Flask. Tensorflow. Sklearn. ",
-        "salary": 100000
+        "name": "ГИС - аналитик",
+        "url": "https://api.hh.ru/vacancies/126171855?host=hh.ru",
+        "description": "Опыт работы с SQL и ГИС-базами данных знание основы программирования(<highlighttext>Python</highlighttext>, C++) . Понимание структуры пространственных данных, их работы и...",
+        "salary": 250000
     }
 ]

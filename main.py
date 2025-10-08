@@ -13,7 +13,7 @@ def user_interaction():
     filter_words = input("Введите ключевые слова для фильтрации вакансий через пробел: ").split()
     salary_range = input("Введите диапазон зарплат через пробел: ").split()
 
-    hh.__load_vacancies(search_query)
+    hh._load_vacancies(search_query)
     vacancies_list = add_vacancy_in_lst(hh.vacancies)
     filtered_vacancies = filter_vacancies(vacancies_list, filter_words)
     ranged_vacancies = get_vacancies_by_salary(filtered_vacancies, salary_range)
